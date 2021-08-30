@@ -1,0 +1,26 @@
+<!--pages/myshare/myshare.wxml-->
+<van-checkbox-group value="{{ result }}" bind:change="onChange">
+  <van-cell-group>
+    <van-cell
+      wx:for="{{ list }}"
+      wx:key="index"
+      title=" {{ item }}"
+      value-class="value-class"
+      clickable
+      data-index="{{ index }}"
+      bind:click="toggle"
+    >
+      <van-checkbox
+        catch:tap="noop"
+        class="checkboxes-{{ index }}"
+        name="{{ item }}" 
+      />
+    </van-cell>
+  </van-cell-group>
+</van-checkbox-group>
+
+	<view>
+		<view>
+			<button plain open-type="share" class="share">分享给朋友</button>
+		</view>
+	</view>

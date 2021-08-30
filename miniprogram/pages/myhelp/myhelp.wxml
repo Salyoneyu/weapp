@@ -1,0 +1,2 @@
+<van-divider contentPosition="center">帮助文档</van-divider>
+<van-cell center title="欢迎查看帮助文档"  label="这是一个仅供中国地质大学（武汉）学生和教职员工使用的二手交易平台小程序，更多详情请发送邮件至团队邮箱1711104301@qq.com。欢迎您的使用和交流！" />

@@ -1,0 +1,37 @@
+/* pages/HTclass/HTclass.wxss */
+.goodlist{	
+	display: flex;
+	flex-wrap: wrap;
+	align-content: start;/* 垂直分布方式 */
+	justify-content: start;/* 水平分布方式*/
+	background-color: #8a959c00;
+}
+.goodlist_items{
+	text-align: center;
+	width: 350rpx;
+	height: 410rpx;
+	border-radius: 10%;
+	background-color: #ffffff;
+	margin-left: 20rpx;	/* 左右间距 */
+	margin-top: 20rpx;	/* 上下间距 */
+}
+.good_box{
+	position: relative;
+	color: #39a6ee;
+	width: 350rpx;
+	height: 360rpx;
+	border-radius: 20%;
+}
+.good_img{
+	width: 350rpx;
+	height: 350rpx;
+	position: absolute;
+	border-radius: 10% 10% 0 0;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%); 
+}
+.good_name{
+	font-size: 35rpx;
+	color: gray;
+}

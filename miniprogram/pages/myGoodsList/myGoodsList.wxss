@@ -1,0 +1,90 @@
+
+.list_item{
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 20rpx;
+	background-color: white;
+	padding: 20rpx;
+	position: relative;
+}
+.list_item image{
+	width: 200rpx;
+	height: 200rpx;
+	border-radius: 8rpx;
+	margin-right: 20rpx;
+}
+.g_center{
+	position: relative;
+}
+.goods_msg{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	height:100%;
+}
+.g_right{
+	text-align: right;
+	flex-direction: row;
+	position: absolute;
+	left: 100rpx;
+	right:20rpx;
+}
+.p_box{
+	color: #e76f33;
+	margin-bottom: 37px;
+	
+}
+button.van-button{
+	width:100px;
+	height:30px;
+	min-height:4px;
+	margin-left:10px;
+	margin-bottom: 5px;
+}
+.btns{
+	display: flex;
+	flex-direction: row;
+	justify-content: end;/* 水平分布方式*/
+	margin-left: 50px;
+}
+.GLbtn{
+	margin-bottom: 0rpx;
+}
+.no-likes{
+  padding-top: 100rpx;
+}
+.empty{
+  text-align:center;
+  display:block;
+  color:gray;
+}
+
+
+.g_tit{
+	width: 320rpx;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-bottom: 10px;
+	font-size: 30rpx;
+}
+.g_desc{
+  width: 320rpx;
+  color: gray;
+	font-size: 24rpx;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	display: -webkit-box; 
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; 
+}
+.like_num{
+	font-size: 35rpx;
+	color: gray;
+}
+
+.p_tag{
+	font-size: 40rpx;
+
+}
+

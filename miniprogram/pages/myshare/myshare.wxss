@@ -1,0 +1,10 @@
+/* pages/myshare/myshare.wxss */
+.value-class {
+  flex: none !important;
+}
+button.share{
+  margin-top: 10px;
+  border: none;
+	background-color: #0fb7e0;
+	color:#ffffff;
+}

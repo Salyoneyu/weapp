@@ -1,0 +1,65 @@
+<van-dialog id="van-dialog" />
+<view>
+	<view class="login">
+      <image wx:if="{{!logged}}" src="{{avatarUrl}}" 
+      mode="aspectFill"
+      class="userinfo-avatar" />
+		<image wx:else src="{{userInfo.avatarUrl}}" class="userinfo-avatar" />
+	    <view class="info" wx:if="{{!logged}}">
+	    	<!-- <text>未登录</text> -->
+	    	<button class="log_btn" plain open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">点击登录</button>
+	  	<text class="detail">您还未登录，请点击授权登录</text>
+      </view>
+	    <view class="info" wx:else>
+	    	<text class="user_nick">{{userInfo.nickName}}</text>
+			<text wx:if="{{userInfo.autograph != ''}}" class="detail">个性签名: {{userInfo.autograph}}</text>
+	    </view>
+	</view>
+  <view class="minelists">
+    <van-cell class="minelist"
+     is-link
+     title="我的资料"
+     icon="manager-o"
+     link-type="navigateTo"
+     url="/pages/userInfo/userInfo"
+   />
+   <van-cell class="minelist"
+     is-link
+     title="我的商品"
+	   icon="gift-o"
+     link-type="navigateTo"
+     url="/pages/myGoodsList/myGoodsList"
+   />
+   <van-cell class="minelist"
+     is-link
+     title="我想要"
+	   icon="gift-o"
+     link-type="navigateTo"
+     url="/pages/likeGoodsList/likeGoodsList"
+   />
+    <van-cell class="minelist"
+      is-link
+      title="分享给朋友"
+      icon="share-o"
+      link-type="navigateTo"
+      url="/pages/myshare/myshare"
+      />
+    <van-cell class="minelist"
+      is-link
+      title="评价与建议"
+      icon="like-o"
+      link-type="navigateTo"
+      url="/pages/myadvice/myadvice"
+      />
+    <van-cell class="minelist"
+      is-link
+      title="帮助与交流"
+      icon="orders-o"
+      link-type="navigateTo"
+      url="/pages/myhelp/myhelp"
+      />
+  </view>
+ 
+  <van-loading wx:if="{{showLoading}}" size="50px" class="custom-class" color="#fff" />
+	<view wx:if="{{showLoading}}" class="mask"></view>
+</view>

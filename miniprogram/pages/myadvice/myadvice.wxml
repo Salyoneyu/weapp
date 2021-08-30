@@ -1,0 +1,9 @@
+<van-divider contentPosition="center">欢迎留下您宝贵的评价</van-divider>
+<van-rate
+  value="{{ value }}"
+  size="{{ 25 }}"
+  color="#0fb7e0"
+  void-color="#eee"
+  void-icon="star"
+  bind:change="onChange"
+/>

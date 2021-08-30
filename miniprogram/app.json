@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/HThome/HThome",
+    "pages/HTclass/HTclass",
+    "pages/HTpublish/HTpublish",
+    "pages/HTmine/HTmine",
+    "pages/myGoodsList/myGoodsList"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "锤子供需",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#1296db",
+    "list": [{
+        "pagePath": "pages/HThome/HThome",
+        "text": "首页",
+        "iconPath": "./images/icons/home.png",
+        "selectedIconPath": "./images/icons/home_b.png"
+      },
+      {
+        "pagePath": "pages/HTpublish/HTpublish",
+        "text": "发布",
+        "iconPath": "./images/icons/add.png",
+        "selectedIconPath": "./images/icons/add_b.png"
+      },
+      {
+        "pagePath": "pages/HTmine/HTmine",
+        "text": "我的",
+        "iconPath": "./images/icons/me.png",
+        "selectedIconPath": "./images/icons/me_b.png"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-tabbar": "@vant/weapp/tabbar/index",
+    "van-tabbar-item": "@vant/weapp/tabbar-item/index",
+    "van-botton": "@vant/weapp/button/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-nav-bar":"@vant/weapp/nav-bar/index",
+    "van-tab":"@vant/weapp/tab/index",
+    "van-tabs":"@vant/weapp/tabs/index",
+    "van-dialog":"@vant/weapp/dialog/index"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
